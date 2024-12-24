@@ -8,10 +8,10 @@ const config = require('./config');
 const apiBaseUrl = "https://gateway-run.bls.dev/api/v1";
 let useProxy;
 const MAX_PING_ERRORS = 3;
-const pingInterval = 1200;
-const restartDelay = 2400;
-const processRestartDelay = 1500;
-const retryDelay = 1500;
+const pingInterval = 120000;
+const restartDelay = 240000;
+const processRestartDelay = 150000;
+const retryDelay = 150000;
 const hardwareInfoFile = path.join(__dirname, 'hardwareInfo.json');
 
 async function loadFetch() {
